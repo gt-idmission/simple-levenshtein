@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs": "^4.17.0",
     "tsc": "^2.0.4",
     "typescript": "^5.4.3"
   }
