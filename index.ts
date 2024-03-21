@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { params_weighted_leven } from "./params_weighted_leven"
 
 function levenshtein(
   str1: string,
@@ -43,7 +43,7 @@ function levenshtein(
   return distances[str1.length][str2.length];
 }
 
-const result = JSON.parse(readFileSync("params_weighted_leven.json", "utf-8"));
+const result = JSON.parse(params_weighted_leven);
 
 const delete_costs = result["insert_costs"];
 const insert_costs = result["delete_costs"];
